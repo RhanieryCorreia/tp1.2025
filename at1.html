@@ -1,0 +1,40 @@
+<html>
+  <head></head>
+  <body>
+    <form>
+      <input type="number" id="a">
+      <input type="number" id="b">
+
+      <input type="button" value="soma" onclick="soma()">
+      <input type="button" value="mult" onclick="mult()">
+      <input type="button" value="div"  onclick="div()">
+      <input type="button" value=" sub" onclick="sub()">
+
+      <input type="reset" value="Reset">
+   
+
+    <h1 id="resultado"></h1>
+
+    <script>
+      function soma(){
+        res = parseFloat(a.value) + parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+      }
+
+      function mult(){
+        res = parseFloat(a.value) * parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+      }
+
+      function div(){
+        res = parseFloat(a.value) / parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+      }
+
+      function sub(){
+        res = parseFloat(a.value) - parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+      } 
+    </script></form>
+  </body>
+</html>
