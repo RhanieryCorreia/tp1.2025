@@ -1,0 +1,57 @@
+
+<html>
+  <head></head>
+  <body>
+    <form>
+      <input type="number" id="a">
+      <input type="number" id="b">
+
+      <input type="button" value="soma" onclick="soma()">
+      <input type="button" value="mult" onclick="mult()">
+      <input type="button" value="div"  onclick="div()">
+      <input type="button" value=" sub" onclick="sub()">
+      <input type="reset" value="Reset">
+      <input type="button" value="novo ob" onclick="ob()">
+    <h1 id="resultado"></h1>
+
+    <script>
+        var contas = []
+
+      function soma(){
+        res = parseFloat(a.value) + parseFloat(b.value)
+        let mariola = document.createElement("div")
+        mariola.innerHTML = `${a.value} + ${b.value} = ${res}`
+        resultado.append(mariola)
+        let ob = {}
+        ob.operando1 = parseFloat(a.value)
+        ob.operando2 = parseFloat(b.value)
+        ob.operacao = "+"
+        ob.resultado = res
+        contas.push(ob)
+
+      }
+
+      function mult(){
+        res = parseFloat(a.value) * parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+        ob("-")
+      }
+
+      function div(){
+        res = parseFloat(a.value) / parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+      }
+
+      function sub(){
+        res = parseFloat(a.value) - parseFloat(b.value)
+        resultado.innerHTML = `x = ${res}`
+      }
+      
+        function ob(operacao) {
+         ob = document.push(input.onclick);
+         ob = innerHTML
+        
+        } 
+    </script></form>
+  </body>
+</html>
